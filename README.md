@@ -12,9 +12,57 @@ In this lesson, we'll unpack what **Webpack** brings to the table when developin
 
 # Webpack
 
-Welcome back! If you didn't take a break, shame on you.
+Welcome back! We are picking up where we left off in the [previous lesson][previous-lesson]. If you didn't take a break, shame on you. In this lesson, we will explore Webpack and its place in the React development process.
 
-TODO: instead lead here with the problem before describing the solution
+## The Problem
+
+To best describe Webpack, we will begin by describing the problem that it was created to solve.
+
+Picture having a server that sends some JavaScript using webpage to browsers. Let's imagine we have some `animateDiv.js` script we want browsers to receive that itself makes use of `jquery`. The first file we send to a requesting client, `index.html`, may look like this:
+
+```html
+<!-- index.html -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery.js"></script>
+    <script src="animateDiv.js"></script>
+    <title>Discotek</title>
+  </head>
+  <body>
+    <div class="animat" onclick="animateDiv.js">
+      I'm going to animate if you click me!
+    </div>
+  </body>
+</html>
+```
+
+With this approach, we are actually making three http requests to the server for the application:
+  - We hit the base url and are returned the `index.html` file
+  - `index.html` tells the browser to request `jquery.js` from the server
+  - `index.html` tells the browser to request `animateDiv.js` from the server
+
+A quick and dirty way around this would be to either combine our JavaScript files into one file on the server (bringing this to two requests):
+
+```html
+<!-- index.html -->
+...
+<script src="combinedJqueryAnimateDiv.js"></script>
+...
+```
+
+We could go one step futher and even in-line the JavaScript directly into our HTML in a `<script>` tag (sending everything at once in `index.html`):
+
+```html
+<!-- index.html -->
+...
+<script>
+  // all the contents of jquery.js and animateDiv.js written directly here!
+</script>
+...
+```
+
+
 
 In the last couple of labs we have been using `npm start` to run our code in the browser and `npm test` to run our tests. The commands have been running Babel and **Webpack** to transpile our code into executable JS for all browsers.
 
@@ -108,6 +156,7 @@ Every lab from now on in this section will have these tools set up for you. You 
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/webpack-and-react'>Webpack and React</a> on Learn.co and start learning to code for free.</p>
 
+[previous-lesson]: https://learn.co/lessons/webpack-and-react
 [babel-stage-2]: https://babeljs.io/docs/plugins/preset-stage-2/
 [webpack]: https://webpack.js.org/
 [tubes]: https://en.wikipedia.org/wiki/Series_of_tubes
