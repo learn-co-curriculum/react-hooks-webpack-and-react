@@ -62,18 +62,16 @@ We could go one step futher and even in-line the JavaScript directly into our HT
 ...
 ```
 
+Unfortunately, this is not very practical. We need to, by 'hand', combine JavaScript code from multiple files into one. Introducing Webpack!
 
-
-In the last couple of labs we have been using `npm start` to run our code in the browser and `npm test` to run our tests. The commands have been running Babel and **Webpack** to transpile our code into executable JS for all browsers.
-
-[Webpack][Webpack] lets us require modules using Node's version of the CommonJS module system. This means that we can include external JS code in our JavaScript files (both local files as well as `node_modules` installed with `npm`). In a simplified example:
+[Webpack][Webpack] lets us combine different automatically. This means that we can freely import external JS code in our JavaScript files (both local files as well as `node_modules` installed with `npm`) and trust that Webpack, before we send clients our JS code over the internet, intelligently packages it up for us. In a simplified example:
   - File `siliconOverlord.js` has space-age AI code in it
   - File `enslaveHumanity.js` wants to make use of this other file and send it to browsers all over the internet.
   - Instead of always sending both `enslaveHumanity.js` and `siliconOverlord.js` to browsers, one after the other, **Webpack** pre-bundles them together into a single file that can be sent instead: `singularity.js`
 
 If you have been working with dependencies already (`gem`s in rails, `require` in vanilla JS, etc.) you may have noticed we did not need any tool like Webpack to work with code written in other files. While this is true, and we don't _need_ Webpack to do this, let's highlight the problem Webpack solves before trying to understand it:.
 
-When compiling a React application with Webpack, it'll check every file for dependencies that it needs to import, and also include that code. In more technical terms, it's traversing the dependency tree and inlining those dependencies in our script. What we'll end up with is one big JS file that includes _all_ of our code, including any dependencies (like `React`, your components, your `npm` modules, etc.) in that file too. The convenience of this is not to be underestimated: one file, with _all_ of our code, means we only need to transfer a single thing to our clients when they ask for our React applications!
+When compiling a React application with Webpack, it'll check every file for dependencies that it needs to import, and also include that code. In more technical terms, it's traversing the dependency tree and inlining those dependencies in our application. What we'll end up with is one big JS file that includes _all_ of our code, including any dependencies (like `jQuery`, your components, your `npm` modules, etc.) in that file too. The convenience of this is not to be underestimated: one file, with _all_ of our code, means we only need to transfer a single thing to our clients when they ask for our React applications!
 
 Enough theory, let's take a look at a rudimentary example of how Webpack does this. Let's assume we have the following application on our server that we want to share with the world:
 
