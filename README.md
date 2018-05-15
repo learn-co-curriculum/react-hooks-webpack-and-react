@@ -149,8 +149,8 @@ Additionally, there are a lot of juicy nectarines (read: low hanging fruit) that
 Every lab from now on in this section will have these tools set up for you. You just need to run `npm start` to complete the Babel compiling, Webpack bundling, process. Additionally, `npm run watch` will initiate 'hot reloading', which re-pushes your application to the browser anytime you save files you are working on. This will streamline the development process. In layperson terms, if React development skills were muscles, we want to focus on getting you [swol][swol] before having you worry about learning to assemble weight machines.
 
 ## Resources
-- [Webpack]: https://webpack.js.org/
-- [Babel]: http://babeljs.io/
+- Webpack: https://webpack.js.org/
+- Babel: http://babeljs.io/
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/webpack-and-react'>Webpack and React</a> on Learn.co and start learning to code for free.</p>
 
