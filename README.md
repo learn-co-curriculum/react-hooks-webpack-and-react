@@ -135,8 +135,6 @@ In React, **Webpack** manages pesky dependency loading for us by **pre-digesting
 After reading the previous lesson on Babel and now this one on Webpack, you may, understandably, be asking yourself:
   - "How important is this Webpack/Babel jargon?"
   - "How much do I need to learn about the different tools that improve React development experience vs. actual React programming?"
-  - "_Why_ on _Earth_ did I _ever_ `npm run eject`?"
-  - "Day 36: Dear Diary, I have grown ever more suspicious of what `create-react-app` is hiding from me. I am going to do it..."
 
 Because `create-react-app` is so opaque with configuration files, allow us to to transparent with you:
 
