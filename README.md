@@ -62,9 +62,9 @@ We could go one step futher and even in-line the JavaScript directly into our HT
 ...
 ```
 
-Unfortunately, this is not very practical. We need to, by 'hand', combine JavaScript code from multiple files into one. Introducing Webpack!
+Unfortunately, this is not very practical. We need to, by 'hand', combine JavaScript code from multiple files into one. Well...we're programmers! We automate the boring tasks like this! Introducing **Webpack**!
 
-[Webpack][Webpack] lets us combine different automatically. This means that we can freely import external JS code in our JavaScript files (both local files as well as `node_modules` installed with `npm`) and trust that Webpack, before we send clients our JS code over the internet, intelligently packages it up for us. In a simplified example:
+[Webpack][Webpack] lets us combine different files automatically. This means that we can freely import external JS code in our JavaScript files (both local files as well as `node_modules` installed with `npm`). We trust that Webpack, before we send clients our JS code over the internet, intelligently packages it up for us. In a simplified example:
   - File `siliconOverlord.js` has space-age AI code in it
   - File `enslaveHumanity.js` wants to make use of this other file and send it to browsers all over the internet.
   - Instead of always sending both `enslaveHumanity.js` and `siliconOverlord.js` to browsers, one after the other, **Webpack** pre-bundles them together into a single file that can be sent instead: `singularity.js`
