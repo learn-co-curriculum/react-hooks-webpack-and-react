@@ -136,7 +136,7 @@ After reading the previous lesson on Babel and now this one on Webpack, you may,
   - "How important is this Webpack/Babel jargon?"
   - "How much do I need to learn about the different tools that improve React development experience vs. actual React programming?"
 
-Because `create-react-app` is so opaque with configuration files, allow us to to transparent with you:
+Because `create-react-app` is so opaque with configuration files, allow us to be transparent with you:
 
 At Flatiron, we are constantly balancing an explanation of the fundamentals against practice on the real skills that will get you producing valuable applications the quickest. We believe that, while learning React basics, it's important to know how these tools (Webpack + Babel) work on a _high level_. Let's justify both in turn:
 
