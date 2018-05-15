@@ -124,8 +124,6 @@ reveal(gutMensch, "Chrome Boi")
 
 If we were to first pre-digest our files with Webpack, we would instead have a single, all-encompassing, file that ensures our dependencies are right where they belong.
 
-TODO: removed the code along/named export part that was here (see curriculum/react-jsx repo). Check lab and put there? Don't want to reincorporate: long enough as it is.
-
 ## Summary
 
 You have just read a lot of information about a tool you likely have not worked directly with before. Luckily, its straight forward to summarize:
