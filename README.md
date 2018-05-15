@@ -142,9 +142,9 @@ At Flatiron, we are constantly balancing an explanation of the fundamentals agai
 
 Most React code nowadays is being compiled one way or another — be it using **Webpack**, an alternative such as [Browserify][browserify], or something else. We want to use it, but we don't want to create unnecessary busywork for ourselves or distract with peripherals.
 
-Additionally, there are a lot of juicy nectarines (read: low hanging fruit) that aren't present in the the ECMAScript version browsers implement, i.e.: JSX, [upcoming proposed language features][babel-stage-2], etc., which we can pluck with **Babel**. Don't you want to sink your teeth into those [syntactic sugary][syntactic-sugar] stone fruits?
+Additionally, there are a lot of juicy nectarines (read: low hanging fruit) that aren't present in the the ECMAScript version browsers implement, such as [upcoming proposed JS language features][babel-stage-2], which we can pluck with **Babel**. Don't you want to sink your teeth into those [syntactic sugary][syntactic-sugar] stone fruits?
 
-Every lab from now on in this section will have these tools set up for you. You just need to run `npm start` to complete the Babel compiling, Webpack bundling, process. Additionally, `npm run watch` will initiate 'hot reloading', which re-pushes your application to the browser anytime you save files you are working on. This will streamline the development process. In layperson terms, if React development skills were muscles, we want to focus on getting you [swol][swol] before having you worry about learning to assemble weight machines.
+For the most part, Babel and Webpack will be abstracted from you so you can focus on learning the primary React competencies.  This will streamline the development process. In layperson terms, if React development skills were muscles, we want to focus on getting you [swol][swol] before having you worry about learning to assemble weight machines.
 
 ## Resources
 - Webpack: https://webpack.js.org/
@@ -156,6 +156,7 @@ Every lab from now on in this section will have these tools set up for you. You 
 [babel-stage-2]: https://babeljs.io/docs/plugins/preset-stage-2/
 [webpack]: https://webpack.js.org/
 [tubes]: https://en.wikipedia.org/wiki/Series_of_tubes
+[jsx]: https://babeljs.io/docs/plugins/transform-react-jsx/
 [browserify]: http://browserify.org/
 [syntactic-sugar]: https://en.wikipedia.org/wiki/Syntactic_sugar
 [swol]: https://i.imgur.com/RAegPMp.jpg
