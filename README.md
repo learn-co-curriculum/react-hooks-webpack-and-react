@@ -152,7 +152,7 @@ Every lab from now on in this section will have these tools set up for you. You 
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/webpack-and-react'>Webpack and React</a> on Learn.co and start learning to code for free.</p>
 
-[previous-lesson]: https://learn.co/lessons/webpack-and-react
+[previous-lesson]: https://learn.co/lessons/babel-and-react
 [babel-stage-2]: https://babeljs.io/docs/plugins/preset-stage-2/
 [webpack]: https://webpack.js.org/
 [tubes]: https://en.wikipedia.org/wiki/Series_of_tubes
