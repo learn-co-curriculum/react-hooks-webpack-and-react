@@ -140,7 +140,7 @@ At Flatiron, we are constantly balancing an explanation of the fundamentals agai
 
 Most React code nowadays is being compiled one way or another — be it using **Webpack**, an alternative such as [Browserify][browserify], or something else. We want to use it, but we don't want to create unnecessary busywork for ourselves or distract with peripherals.
 
-Additionally, there are a lot of juicy nectarines (read: low hanging fruit) that aren't present in the the ECMAScript version browsers implement, such as [upcoming proposed JS language features][babel-stage-2], which we can pluck with **Babel**. Don't you want to sink your teeth into those [syntactic sugary][syntactic-sugar] stone fruits?
+Additionally, there are a lot of juicy nectarines (read: low hanging fruit) that aren't present in the ECMAScript version browsers implement, such as [upcoming proposed JS language features][babel-stage-2], which we can pluck with **Babel**. Don't you want to sink your teeth into those [syntactic sugary][syntactic-sugar] stone fruits?
 
 For the most part, Babel and Webpack will be abstracted from you so you can focus on learning the primary React competencies.  This will streamline the development process. In layperson terms, if React development skills were muscles, we want to focus on getting you [swol][swol] before having you worry about learning to assemble weight machines.
 
