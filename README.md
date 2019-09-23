@@ -42,7 +42,7 @@ With this approach, we are actually making three http requests to the server for
   - `index.html` tells the browser to request `jquery.js` from the server
   - `index.html` tells the browser to request `animateDiv.js` from the server
 
-A quick and dirty way around this would be to either combine our JavaScript files into one file on the server (bringing this to two requests):
+A quick and dirty way around this would be to combine our JavaScript files into one file on the server (bringing this to two requests):
 
 ```html
 <!-- index.html -->
