@@ -124,7 +124,7 @@ If we were to first pre-digest our files with Webpack, we would instead have a s
 
 ## Summary
 
-You have just read a lot of information about a tool you likely have not worked directly with before. Luckily, its straight forward to summarize:
+You have just read a lot of information about a tool you likely have not worked directly with before. Luckily, its straightforward to summarize:
 
 In React, **Webpack** manages pesky dependency loading for us by **pre-digesting** our many files' code and outputting a single 'bundle', which contains all of our code, with dependencies properly placed, in one file.
 
