@@ -32,7 +32,7 @@ client, `index.html`, may look like this:
 <!-- index.html -->
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <script src="./vendors/jquery.js"></script>
     <script src="./lib/animateDiv.js"></script>
     <title>Discotek</title>
@@ -78,7 +78,7 @@ Unfortunately, this is not very practical. We need to, by 'hand', combine
 JavaScript code from multiple files into one. Well...we're programmers! We
 automate the boring tasks like this! Introducing **Webpack**!
 
-[Webpack][Webpack] lets us combine different files automatically. This means
+[Webpack][webpack] lets us combine different files automatically. This means
 that we can freely import external JS code in our JavaScript files (both local
 files as well as `node_modules` installed with `npm`). We trust that Webpack,
 before we send clients our JS code over the internet, intelligently packages it
@@ -119,22 +119,22 @@ application:
 ```js
 // reveal.js (pre Webpack bundling)
 function reveal(person, realIdentity) {
-  person.identity = realIdentity
+  person.identity = realIdentity;
 }
 
-export default reveal
+export default reveal;
 ```
 
 ```js
 // main.js (pre Webpack bundling)
-import reveal from './reveal.js'
+import reveal from "./reveal.js";
 
 const gutMensch = {
   name: "Andrew Cohn",
   identity: "Friendly Neighborhood Flatiron Teacher",
-}
+};
 
-reveal(gutMensch, "Chrome Boi")
+reveal(gutMensch, "Chrome Boi");
 ```
 
 Without Webpack, we would need to find some way to send both files to our client
@@ -148,21 +148,20 @@ excellent solution: Webpack.
 Instead of writing our own bespoke, artisanal, Etsy&trade; sell-able dependency
 solution, we can just use Webpack!
 
-
 **The result after we unleash Webpack on these files:**
 
 ```js
 // bundle.js (post Webpack bundling)
 function reveal(person, realIdentity) {
-  person.identity = realIdentity
+  person.identity = realIdentity;
 }
 
 const gutMensch = {
   name: "Andrew Cohn",
   identity: "Friendly Neighborhood Flatiron Teacher",
-}
+};
 
-reveal(gutMensch, "Chrome Boi")
+reveal(gutMensch, "Chrome Boi");
 ```
 
 If we were to first bundling our files with Webpack, we would instead have a
@@ -213,6 +212,7 @@ muscles, we want to focus on getting you [swol][swol] before having you worry
 about learning to assemble weight machines.
 
 ## Resources
+
 - [Webpack][webpack]
 - [Babel][babel]
 
