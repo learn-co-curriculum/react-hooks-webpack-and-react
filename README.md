@@ -168,13 +168,23 @@ If we were to first bundling our files with Webpack, we would instead have a
 single, all-encompassing, file that ensures our dependencies are right where
 they belong.
 
+## More than Just JavaScript
+
+In addition to bundling up our JavaScript code, Webpack also allows us to manage
+all kinds of other assets in our React projects. You may have noticed that we're
+able to `import` CSS files and images in addition to importing JavaScript files
+&mdash; this is something we can _only_ do because of Webpack.
+
+You can read more about how Webpack is configured to work in our React projects
+in the [Create React App docs][create react app].
+
 ## Summary
 
 You have just read a lot of information about a tool you likely have not worked
 directly with before. Luckily, its straightforward to summarize:
 
-In React, **Webpack** manages pesky dependency loading for us by
-**bundling** our many files' code and outputting a single file, which
+In our React applications, **Webpack** manages pesky dependency loading for us
+by **bundling** our many files' code and outputting a single file, which
 contains all of our code, with dependencies properly placed, in one file.
 
 ## Looking Forward
@@ -216,8 +226,6 @@ about learning to assemble weight machines.
 - [Webpack][webpack]
 - [Babel][babel]
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/webpack-and-react'>Webpack and React</a> on Learn.co and start learning to code for free.</p>
-
 [babel]: http://babeljs.io/
 [previous-lesson]: https://learn.co/lessons/babel-and-react
 [babel-stage-2]: https://babeljs.io/docs/plugins/preset-stage-2/
@@ -226,3 +234,4 @@ about learning to assemble weight machines.
 [browserify]: http://browserify.org/
 [syntactic-sugar]: https://en.wikipedia.org/wiki/Syntactic_sugar
 [swol]: https://i.imgur.com/RAegPMp.jpg
+[create react app]: https://create-react-app.dev/docs/adding-a-stylesheet
