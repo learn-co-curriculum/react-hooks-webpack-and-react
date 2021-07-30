@@ -158,7 +158,7 @@ that ensures our dependencies are right where they belong.
 In addition to bundling up our JavaScript code, webpack also allows us to manage
 all kinds of other assets in our React projects. You may have noticed that we're
 able to `import` CSS files and images in addition to importing JavaScript files
-&mdash; this is something we can _only_ do because of webpack.
+— this is something we can _only_ do because of webpack.
 
 You can read more about how webpack is configured to work in our React projects
 in the [Create React App docs][create react app].
@@ -186,7 +186,7 @@ get you producing valuable applications quickly. We believe that, while learning
 React basics, it's important to know how these tools (webpack and Babel) work on
 a _high level_.
 
-Most React code nowadays is being compiled one way or another &mdash; be it
+Most React code nowadays is being compiled one way or another — be it
 using **webpack**, an alternative such as [Browserify][browserify], or something
 else. Thanks to tools like Create React App, we can use webpack without worrying
 about the complexities of how it works or setting up that configuration
