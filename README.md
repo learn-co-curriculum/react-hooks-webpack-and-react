@@ -5,7 +5,7 @@
 - Learn what webpack is
 - Understand how webpack integrates with a Create React App project
 
-## Overview
+## Introduction
 
 In this lesson, we'll unpack what **webpack** brings to the table when
 developing React applications.
@@ -15,7 +15,7 @@ developing React applications.
 To best describe webpack, we will begin by describing the problem that it was
 created to solve.
 
-Picture having a server that sends some JavaScript using webpage to browsers.
+Picture having a server that sends some JavaScript-using webpage to browsers.
 Let's imagine we have some `animateDiv.js` script we want browsers to receive
 that itself makes use of [`d3js`][d3js], a data visualization library. The first
 file we send to a requesting client, `index.html`, may look like this:
@@ -166,15 +166,16 @@ in the [Create React App docs][create react app].
 ## Conclusion
 
 You have just read a lot of information about a tool you likely have not worked
-directly with before. Luckily, its straightforward to summarize:
+directly with before. Luckily, it's straightforward to summarize:
 
 In our React applications, **webpack** manages pesky dependency loading for us
-by **bundling** our many files' code and outputting a single file, which
-contains all of our code, with dependencies properly placed, in one file.
+by **bundling** all the code — our own code plus the code for our dependences —
+and outputting it in a single file.
 
 ## Looking Forward
 
-After reading the previous lesson on Babel and now this one on webpack, you may, understandably, be asking yourself:
+After reading the previous lesson on Babel and now this one on webpack, you may,
+understandably, be asking yourself:
 
 - "How important is this webpack/Babel jargon?"
 - "How much do I need to learn about the different tools that improve React
